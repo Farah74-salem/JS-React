@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>إنشاء حساب جديد</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,7 +19,6 @@
       <div class="input-group">
         <label for="fullName">الاسم الكامل</label>
         <div class="input-wrapper">
-          <i class="fa-regular fa-user icon"></i>
           <input type="text" id="fullName" placeholder="أدخل اسمك الكامل">
         </div>
         <small class="error-msg" id="fullNameError"></small>
@@ -29,7 +27,6 @@
       <div class="input-group">
         <label for="email">البريد الإلكتروني</label>
         <div class="input-wrapper">
-          <i class="fa-regular fa-envelope icon"></i>
           <input type="email" id="email" placeholder="name@example.com">
         </div>
         <small class="error-msg" id="emailError"></small>
@@ -38,11 +35,7 @@
       <div class="input-group">
         <label for="password">كلمة المرور</label>
         <div class="input-wrapper">
-          <i class="fa-solid fa-lock icon"></i>
           <input type="password" id="password" placeholder="••••••••">
-          <button type="button" id="togglePassword" class="toggle-btn">
-            <i class="fa-regular fa-eye" id="eyeIcon"></i>
-          </button>
         </div>
         <small class="error-msg" id="passwordError"></small>
 
@@ -61,13 +54,9 @@
             <i class="fa-solid fa-circle-xmark icon-status"></i>
             <span>بين 8 إلى 20 حرفًا</span>
           </li>
-          <li id="reqUpper">
+          <li id="reqCase">
             <i class="fa-solid fa-circle-xmark icon-status"></i>
-            <span>تحتوي على حرف كبير (A-Z)</span>
-          </li>
-          <li id="reqLower">
-            <i class="fa-solid fa-circle-xmark icon-status"></i>
-            <span>تحتوي على حرف صغير (a-z)</span>
+            <span>تحتوي على حرف كبير وحرف صغير (A-Z, a-z)</span>
           </li>
           <li id="reqNum">
             <i class="fa-solid fa-circle-xmark icon-status"></i>
@@ -80,7 +69,7 @@
         </ul>
       </div>
 
-      <button type="submit" id="submitBtn">تسجيل الحساب</button>
+      <button type="submit" id="submitBtn">انشاء الحساب</button>
 
     </form>
   </div>

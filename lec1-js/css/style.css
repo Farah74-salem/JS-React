@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background-color: #f0fdfa;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 500px;
+}
+
+.card h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+  color: #134e4a;
+}
+
+form .input-group {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #99d5cf;
+  outline: none;
+  font-family: inherit;
+}
+
+form input:focus {
+  border-color: #0d9488;
+}
+
+/* رسالة الخطأ */
+.error-msg {
+  display: block;
+  color: #f00;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.strength-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.progress-bar-bg {
+  height: 6px;
+  background-color: #ccfbf1;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  transition: all 0.3s ease;
+}
+
+.progress-bar.weak {
+  width: 20%;
+  background-color: #ef4444;
+}
+
+.progress-bar.medium {
+  width: 60%;
+  background-color: #f59e0b;
+}
+
+.progress-bar.strong {
+  width: 100%;
+  background-color: #10b981;
+}
+
+/* قائمة الشروط */
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.requirements-list li {
+  margin-bottom: 5px;
+}
+
+.requirements-list li .icon-status {
+  color: #f00;
+  margin-left: 5px;
+}
+
+.requirements-list li.passed {
+  color: #10b981;
+}
+
+.requirements-list li.passed .icon-status {
+  color: #10b981;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0d9488;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0f766e;
+}
